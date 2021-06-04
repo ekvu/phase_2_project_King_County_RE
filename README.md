@@ -22,7 +22,7 @@ Our stakeholders at Seattle Rental Group/Pointe3 offers services for not only pr
 
 # 3. Data
 
-- The source for this data is from the official government website of King's County for housing sales in 2014-2015.
+- The source for this data is from the official government website of [King County for housing sales](https://info.kingcounty.gov/assessor/esales/Residential.aspx) in 2014-2015.
 - The data is relevant for our analysis because we are focusing in the King's County area and this set has information about housing sales in King's County.
 - The data set includes 21,597 records 21 features
 - Our target variable is sale price
@@ -45,27 +45,27 @@ Our stakeholders at Seattle Rental Group/Pointe3 offers services for not only pr
       -the latitude and longitude, 
       -square footage of the living space for the nearest 15 neighbors
       -square footage of lot for the nearest 15 neighbors
-      
-- https://info.kingcounty.gov/assessor/esales/Residential.aspx
 
 # 4. Methods 
 
 - We started off by importing the data and looking at the data
-- We then identified our numerical/continuous variables and our categorical variables
+- We then identified our numerical/continuous variables and our categorical variables and started framing our questions
 - We cleaned our data in Python and then visualized our data through histograms and correlation plots with Seaborne and Matplotlib
 - We then used Stats Models and ScikitLearn to build our first simple linear regression model
--   First simple model: Target was price and our variable was sq ft of living area as it had the highest correlation to price
+- First simple model: Target was price and our variable was sq ft of living area as it had the highest correlation to price
+- We observed our R^2 to be 0.49 and our coefficient to be 280.87, meaning an increase in sqft increases the sale price by $280.87.
 
 ![FSM](https://github.com/ekvu/phase_2_project_vac_pandas/blob/main/images/fsm_dark.png?raw=true)
 
 
 - After our first model, we added, transformed, and engineered new features to observe how they impacted price
+- We then examined our results and formulated our conclusions.
 
 We believe that this approach is appropriate as our goal of our analysis is to see what features drive sale price up so we can focus on remodelling or upgrading to those features.
 
 # 5. Results
 
-From the results of our modelling, we were able to add and identify features with a positive impact on the sale price. We explored the zip codes and saw that these zip codes, 98039, 98004, 98112, 98102, 98109 had the largest coefficients meaning they had a greater influence on the price than the other zip codes. We were able to also observe the average price of the homes in those zip codes and compare against the total mean.
+From the results of our modelling, we were able to add and identify features with a positive impact on the sale price. We explored the zip codes and saw that these zip codes, 98039, 98004, 98112, 98102, 98109 had the largest coefficients meaning they had a greater influence on the price if they were located in these zipccodes vs other zip codes. We were able to also observe the average price of the homes in those zip codes and compare against the total mean.
 
 ![Bar Chart](https://github.com/ekvu/phase_2_project_vac_pandas/blob/main/images/Mean_Sales_Zip_Price.png?raw=true)
 
@@ -80,7 +80,7 @@ We found that the zip code, waterfront, view count, sqft, and renovation feature
 
 # 7. For More Information
 
-Please review our full analysis in our Jupyter Notebook and our presentation
+Please review our full analysis in our [Jupyter Notebook](https://github.com/ekvu/phase_2_project_vac_pandas/blob/main/Final_Technical_notebook.ipynb) and our [presentation](https://github.com/ekvu/phase_2_project_vac_pandas/blob/main/Phase2_BrianMatsiko_ErinVu_KingCounty.pdf). The data can be found in [/data](https://github.com/ekvu/phase_2_project_vac_pandas/tree/main/data), images in [/images](https://github.com/ekvu/phase_2_project_vac_pandas/tree/main/images), and our working notebooks in [/dev_notebooks](https://github.com/ekvu/phase_2_project_vac_pandas/tree/main/dev_notebooks).
 
 For additional questions, please contact:
 
